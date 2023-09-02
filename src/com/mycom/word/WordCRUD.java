@@ -53,4 +53,27 @@ public class WordCRUD implements ICRUD {
 		}
 		System.out.println("---------------------------------");
 	}
+	
+	public void listDifficulty() {
+		System.out.println("---------------------------------");
+		for (int i = 0; i < list.size(); i++) {
+			if(list.get(i).difficulty() == 1) {
+				System.out.print((i+1) + " ");
+				System.out.println(list.get(i).toString());
+			}
+		}
+		for (int i = 0; i < list.size(); i++) {
+			if(list.get(i).difficulty() == 2) {
+				System.out.print((i+1) + " ");
+				System.out.println(list.get(i).toString());
+			}
+		}
+		for (int i = 0; i < list.size(); i++) {
+			if(list.get(i).difficulty() == 3) {
+				System.out.print((i+1) + " ");
+				System.out.println(list.get(i).toString());
+			}
+		}
+		System.out.println("---------------------------------");
+	}
 }
