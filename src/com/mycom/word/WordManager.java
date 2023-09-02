@@ -12,8 +12,7 @@ public class WordManager {
 	}
 	
 	public int selectMenu() {
-		System.out.print("*** 영단어 마스터 ***\n"
-				+ "********************\n"
+		System.out.print("\n********************\n"
 				+ "1. 모든 단어 보기\n"
 				+ "2. 수준별 단어 보기\n"
 				+ "3. 단어 검색\n"
@@ -28,6 +27,7 @@ public class WordManager {
 	}
 	
 	public void start() {
+		System.out.print("*** 영단어 마스터 ***\n");
 		while(true) {
 			int menu = selectMenu();
 			
@@ -36,7 +36,7 @@ public class WordManager {
 			} else if (menu == 1) {
 				wordCRUD.listAll();
 			} else if (menu == 2) {
-				//wordCRUD.listDifficulty();
+				wordCRUD.listDifficulty();
 			} else if (menu == 3) {
 				
 			} else if (menu == 4) {
@@ -50,7 +50,10 @@ public class WordManager {
 			} else {
 				continue;
 			}
+			
+			
 		}
+		System.out.print("\n프로그램 종료! 다음에 만나요~");
 	}
 	
 }
