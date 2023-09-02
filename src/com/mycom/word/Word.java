@@ -49,8 +49,9 @@ public class Word {
 		return str;
 	}	
 	
+	/*
 	public int difficulty() {
 		return level;
 	}
-
+	*/
 }
