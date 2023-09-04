@@ -61,6 +61,7 @@ public class WordCRUD implements ICRUD {
 		System.out.println("---------------------------------");
 	}
 	
+	/*
 	public void listDifficulty() {
 		System.out.println("\n---------------------------------");
 		for (int i = 0; i < list.size(); i++) {
@@ -83,6 +84,7 @@ public class WordCRUD implements ICRUD {
 		}
 		System.out.println("---------------------------------");
 	}
+	*/
 	
 	public ArrayList<Integer> listAll(String keyword) {
 		
@@ -187,5 +189,19 @@ public class WordCRUD implements ICRUD {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
+	}
+	
+	public void listDifficulty() {
+		int j = 0;
+		System.out.print("\n=> 원하는 레벨은? (1~3) ");
+		int level = s.nextInt();
+		System.out.println("---------------------------------");
+		for (int i = 0; i < list.size(); i++) {
+			if(list.get(i).difficulty() != level) continue;
+			System.out.print((j+1) + " ");
+			System.out.println(list.get(i).toString());
+			j++; 
+		}
+		System.out.println("---------------------------------");
 	}
 }
