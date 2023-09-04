@@ -204,4 +204,11 @@ public class WordCRUD implements ICRUD {
 		}
 		System.out.println("---------------------------------");
 	}
+
+	public void searchWord() {
+		// TODO Auto-generated method stub
+		System.out.print("\n=> 원하는 단어는? (1~3) ");
+		String keyword = s.next();
+		listAll(keyword);
+	}
 }
